@@ -1,0 +1,26 @@
+PODS:
+  - Alamofire (4.0.0)
+  - PageMenu (1.2.9)
+  - SwiftyJSON (3.0.0)
+
+DEPENDENCIES:
+  - Alamofire (from `https://github.com/Alamofire/Alamofire.git`, tag `4.0.0`)
+  - PageMenu
+  - SwiftyJSON (= 3.0.0)
+
+EXTERNAL SOURCES:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 4.0.0
+
+CHECKOUT OPTIONS:
+  Alamofire:
+    :git: https://github.com/Alamofire/Alamofire.git
+    :tag: 4.0.0
+
+SPEC CHECKSUMS:
+  Alamofire: fef59f00388f267e52d9b432aa5d93dc97190f14
+  PageMenu: ba19ff267f7a19e444e93c20a7847b78954a7011
+  SwiftyJSON: f57b2b44bc166617372d1c70773591fe9f0f5fd4
+
+COCOAPODS: 0.39.0

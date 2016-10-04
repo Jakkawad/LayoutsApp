@@ -23,6 +23,7 @@
 		844F325B1DA3817900396C23 /* Page1AllCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F325A1DA3817900396C23 /* Page1AllCategoryViewController.swift */; };
 		844F325D1DA3819B00396C23 /* Page1MainMenu1ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F325C1DA3819B00396C23 /* Page1MainMenu1ViewController.swift */; };
 		844F32611DA381FC00396C23 /* Page1MainMenu2ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 844F32601DA381FC00396C23 /* Page1MainMenu2ViewController.swift */; };
+		844F32631DA39FC300396C23 /* Screen Shot 2559-10-04 at 3.27.22 PM.png in Resources */ = {isa = PBXBuildFile; fileRef = 844F32621DA39FC300396C23 /* Screen Shot 2559-10-04 at 3.27.22 PM.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		844F325A1DA3817900396C23 /* Page1AllCategoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page1AllCategoryViewController.swift; path = Page1/Page1AllCategoryViewController.swift; sourceTree = "<group>"; };
 		844F325C1DA3819B00396C23 /* Page1MainMenu1ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page1MainMenu1ViewController.swift; path = Page1/Page1MainMenu1ViewController.swift; sourceTree = "<group>"; };
 		844F32601DA381FC00396C23 /* Page1MainMenu2ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Page1MainMenu2ViewController.swift; path = Page1/Page1MainMenu2ViewController.swift; sourceTree = "<group>"; };
+		844F32621DA39FC300396C23 /* Screen Shot 2559-10-04 at 3.27.22 PM.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Screen Shot 2559-10-04 at 3.27.22 PM.png"; sourceTree = "<group>"; };
 		A6380F1590C236B49FC5A19A /* Pods-All2Sale.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-All2Sale.debug.xcconfig"; path = "Pods/Target Support Files/Pods-All2Sale/Pods-All2Sale.debug.xcconfig"; sourceTree = "<group>"; };
 		F3F10F07F54045DEE0E1E144 /* Pods_All2Sale.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_All2Sale.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -123,7 +125,7 @@
 				844F323F1DA3779400396C23 /* Extenstions */,
 				844F32211DA3753000396C23 /* Main.storyboard */,
 				844F32241DA3753000396C23 /* Assets.xcassets */,
-				844F32561DA37E1400396C23 /* New Group */,
+				844F32561DA37E1400396C23 /* Dummy */,
 				844F32261DA3753000396C23 /* LaunchScreen.storyboard */,
 				844F32291DA3753000396C23 /* Info.plist */,
 			);
@@ -202,11 +204,12 @@
 			name = Page1;
 			sourceTree = "<group>";
 		};
-		844F32561DA37E1400396C23 /* New Group */ = {
+		844F32561DA37E1400396C23 /* Dummy */ = {
 			isa = PBXGroup;
 			children = (
+				844F32621DA39FC300396C23 /* Screen Shot 2559-10-04 at 3.27.22 PM.png */,
 			);
-			name = "New Group";
+			name = Dummy;
 			sourceTree = "<group>";
 		};
 		844F32591DA3815800396C23 /* Main */ = {
@@ -317,6 +320,7 @@
 			files = (
 				844F32281DA3753000396C23 /* LaunchScreen.storyboard in Resources */,
 				844F32251DA3753000396C23 /* Assets.xcassets in Resources */,
+				844F32631DA39FC300396C23 /* Screen Shot 2559-10-04 at 3.27.22 PM.png in Resources */,
 				844F323E1DA3753C00396C23 /* Podfile in Resources */,
 				844F32231DA3753000396C23 /* Main.storyboard in Resources */,
 			);

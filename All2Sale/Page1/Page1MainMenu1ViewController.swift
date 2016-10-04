@@ -38,7 +38,7 @@ class Page1MainMenu1ViewController: UIViewController, UITableViewDataSource, UIT
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
             if indexPath.row == 0 {
-                return 100
+                return 132
             } else {
                 return 100
             }

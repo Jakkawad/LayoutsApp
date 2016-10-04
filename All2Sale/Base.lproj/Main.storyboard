@@ -187,21 +187,29 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="jJ4-j6-71S">
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell0" textLabel="x0J-nP-jmy" style="IBUITableViewCellStyleDefault" id="MrW-q8-0pK">
-                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell0" rowHeight="132" id="MrW-q8-0pK">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="132"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="MrW-q8-0pK" id="5FC-mS-bLB">
-                                            <frame key="frameInset" width="375" height="43"/>
+                                            <frame key="frameInset" width="375" height="131"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="x0J-nP-jmy">
-                                                    <frame key="frameInset" minX="15" width="345" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="0.0"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Screen Shot 2559-10-04 at 3.27.22 PM.png" translatesAutoresizingMaskIntoConstraints="NO" id="PXD-d1-zc3"/>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="PXD-d1-zc3" firstAttribute="leading" secondItem="5FC-mS-bLB" secondAttribute="leading" id="Cvt-gj-qrI"/>
+                                                <constraint firstAttribute="bottom" secondItem="PXD-d1-zc3" secondAttribute="bottom" id="XLz-8r-FZo"/>
+                                                <constraint firstAttribute="trailing" secondItem="PXD-d1-zc3" secondAttribute="trailing" id="tFh-G5-BP4"/>
+                                                <constraint firstItem="PXD-d1-zc3" firstAttribute="top" secondItem="5FC-mS-bLB" secondAttribute="top" id="yAC-Bn-OV3"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableCell1" id="uAn-FO-FtZ">
+                                        <rect key="frame" x="0.0" y="160" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uAn-FO-FtZ" id="VRw-YS-IrO">
+                                            <frame key="frameInset" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </prototypes>
@@ -225,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Agh-B1-I7o" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1658" y="-843"/>
+            <point key="canvasLocation" x="1656.8" y="-843.32833583208401"/>
         </scene>
         <!--Page1 Main Menu2 View Controller-->
         <scene sceneID="TzA-e7-y2v">
@@ -365,7 +373,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="iXG-g2-Uey" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" systemItem="favorites" id="XwE-xb-7b9"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" translucent="NO" id="Y4f-HP-bd9">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" id="Y4f-HP-bd9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
@@ -473,4 +481,7 @@
             <point key="canvasLocation" x="3178.4000000000001" y="-1092.5037481259371"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Screen Shot 2559-10-04 at 3.27.22 PM.png" width="499" height="175"/>
+    </resources>
 </document>

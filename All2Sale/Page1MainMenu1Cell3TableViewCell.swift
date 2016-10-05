@@ -1,15 +1,15 @@
 //
-//  Page1MainMenu2ViewController.swift
+//  Page1MainMenu1Cell3TableViewCell.swift
 //  All2Sale
 //
-//  Created by admin on 10/4/2559 BE.
+//  Created by admin on 10/5/2559 BE.
 //  Copyright © 2559 All2Sale. All rights reserved.
 //
 
 import UIKit
 
-class Page1MainMenu2ViewController: UIViewController, UICollectionViewDataSource, UICollectionViewDelegate {
-    
+class Page1MainMenu1Cell3TableViewCell: UITableViewCell, UICollectionViewDataSource, UICollectionViewDelegate {
+
     let gridFlowLayout = GridViewFlowLayout()
     
     var isGridFlowLayoutUsed: Bool = false {
@@ -36,7 +36,7 @@ class Page1MainMenu2ViewController: UIViewController, UICollectionViewDataSource
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 20
+        return 2
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
@@ -44,29 +44,19 @@ class Page1MainMenu2ViewController: UIViewController, UICollectionViewDataSource
         return cell0
     }
     
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        
         setupGrid()
         isGridFlowLayoutUsed = true
         
-        // Do any additional setup after loading the view.
+        // Initialization code
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func setSelected(_ selected: Bool, animated: Bool) {
+        super.setSelected(selected, animated: animated)
+
+        // Configure the view for the selected state
     }
-    
-    
-    /*
-        // MARK: - Navigation
-    
-        // In a storyboard-based application, you will often want to do a little preparation before navigation
-        override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-        }
-    */
-    
+
 }

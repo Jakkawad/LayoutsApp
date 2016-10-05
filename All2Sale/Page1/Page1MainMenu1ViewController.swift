@@ -31,8 +31,23 @@ class Page1MainMenu1ViewController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell0 = tableView.dequeueReusableCell(withIdentifier: tableCell0)
-        return cell0!
+//        let cell0 = tableView.dequeueReusableCell(withIdentifier: tableCell0)
+//        return cell0!
+        if indexPath.section == 0 {
+            if indexPath.row == 0 {
+                let cell0 = tableView.dequeueReusableCell(withIdentifier: tableCell0) as? Page1MainMenu1Cell0TableViewCell
+                return cell0!
+            } else {
+                let cell1 = tableView.dequeueReusableCell(withIdentifier: tableCell1) as? Page1MainMenu1Cell1TableViewCell
+                return cell1!
+            }
+        } else if indexPath.section == 1 {
+            let cell2 = tableView.dequeueReusableCell(withIdentifier: tableCell2)
+            return cell2!
+        } else {
+            let cell3 = tableView.dequeueReusableCell(withIdentifier: tableCell3) as? Page1MainMenu1Cell3TableViewCell
+            return cell3!
+        }
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -40,28 +55,30 @@ class Page1MainMenu1ViewController: UIViewController, UITableViewDataSource, UIT
             if indexPath.row == 0 {
                 return 132
             } else {
-                return 100
+                return 70
             }
         } else if indexPath.section == 1 {
-            return 100
+            return 172
+        } else if indexPath.section == 1 {
+            return 172
         } else {
-            return 100
+            return 220
         }
     }
     
-    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        if section == 0 {
-            return ""
-        } else if section == 1 {
-            return "New User Perks"
-        } else if section == 2 {
-            return "Featured Brands"
-        } else if section == 3{
-            return "Deals"
-        } else {
-            return "Store Collections"
-        }
-    }
+//    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//        if section == 0 {
+//            return ""
+//        } else if section == 1 {
+//            return "New User Perks"
+//        } else if section == 2 {
+//            return "Featured Brands"
+//        } else if section == 3{
+//            return "Deals"
+//        } else {
+//            return "Store Collections"
+//        }
+//    }
 //    
 //    func scrollViewDidScroll(_ scrollView: UIScrollView) {
 //        print("DidScroll")
@@ -71,7 +88,7 @@ class Page1MainMenu1ViewController: UIViewController, UITableViewDataSource, UIT
         if section == 0 {
             return CGFloat.leastNormalMagnitude
         }
-        return 30
+        return 24
     }
     
     override func viewDidLoad() {

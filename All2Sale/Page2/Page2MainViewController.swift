@@ -71,6 +71,8 @@ class Page2MainViewController: UIViewController, UITableViewDataSource, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        self.tabBarController?.delegate = UIApplication.shared.delegate as? UITabBarControllerDelegate
+        
         // Do any additional setup after loading the view.
     }
 

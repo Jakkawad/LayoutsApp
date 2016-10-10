@@ -11,8 +11,20 @@ import UIKit
 class Page3MainViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
 
     var titleArray = ["Shop name", "Product detail", "Price"]
+    var isLogin:Bool = true//false
     
     @IBOutlet weak var tableView:UITableView!
+    
+    // MARK: Check Login
+    
+    func checkLogin() {
+        if isLogin == true {
+            print("Login")
+        } else {
+            let newVC = storyboard?.instantiateViewController(withIdentifier: "ModalViewController")
+            tabBarController?.present(newVC!, animated: true)
+        }
+    }
     
     func numberOfSections(in tableView: UITableView) -> Int {
         return 5
@@ -44,9 +56,16 @@ class Page3MainViewController: UIViewController, UITableViewDataSource, UITableV
             return 100
         }
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        checkLogin()
+        
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         // Do any additional setup after loading the view.
     }
 

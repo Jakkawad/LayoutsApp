@@ -83,13 +83,13 @@ class Page1MainViewController: UIViewController {
         pageMenu!.didMove(toParentViewController: self)
     }
     
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         setupPageMenu()
         
+        
+
         // Do any additional setup after loading the view.
     }
 
